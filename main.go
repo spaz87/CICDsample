@@ -23,7 +23,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", homeHandler)
-	err := http.ListenAndServe(":38000", nil)
+	err := http.ListenAndServe(":80", nil)
 	if err != nil {
 		log.Fatalln(err)
 	}
