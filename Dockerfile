@@ -8,6 +8,6 @@ RUN go mod download
 COPY *.go ./
 RUN go build -o /go-test
 
-EXPOSE 38000
+EXPOSE 80
 
 CMD ["/go-test"]
