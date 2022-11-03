@@ -19,7 +19,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	_, _ = fmt.Fprintf(w, "Hello, %s!\n", r.UserAgent())
 	_, _ = fmt.Fprintf(w, "I'm running on %s/%s.\n", myOS, myArch)
 	_, _ = fmt.Fprintf(w, "I'm running %s of a container.\n", inContainer)
-	_, _ = fmt.Println("Check out my Github @ github.com/spaz87")
+	_, _ = fmt.Printf("Check out my Github @ github.com/spaz87")
 }
 
 func main() {
