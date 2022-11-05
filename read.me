@@ -1,1 +1,13 @@
-// Test - will update as project comes together. //
+Goals:
+    The goal of this project is to create a simple CI/CD pipeline using Go, Docker, GitHub Actions, and Azure Cloud offerings.
+
+The app:
+    The app is a simple go app written with the standard libraries. It will detect where it is running. To include if it is running
+    in a container or not. The results will then be displayed in the browser when the container is accessed.
+
+The pipeline:
+    Once the code is pushed to the repo GitHub Actions will build the container image from the docker file. That image will then be
+    pushed to to the Azure Container Registry. An Azure Container Instance is then created from the image in the registry.
+    If this is not the first time the action is running then the container in the registry will simply be updated and then the
+    Azure Container Instance will be updated to reflect the changes made to the container.
+
