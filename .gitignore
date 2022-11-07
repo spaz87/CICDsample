@@ -1,0 +1,6 @@
+.idea/vcs.xml
+.idea/.gitignore
+.idea/CICD Sample.iml
+.idea/modules.xml
+.idea/remote-targets.xml
+go.sum
